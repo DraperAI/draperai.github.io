@@ -1,0 +1,300 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #252633;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: solid 2px #ff5c6a;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    border-radius: 6px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: #ff5c6a;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-size: cover;
+}
+
+img.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+
+img.mini-logo {
+    width: 146px;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+}
+
+.perpetua_link:hover img.mini-logo {
+    opacity: 0.4;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .holder {
+    width: 856px;
+    max-width: 100%;
+    margin: auto 30px;
+    text-align: left;
+}
+
+.banner img.logo {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+}
+
+.banner .content {
+    color: #fff;
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner .content .left {
+    text-align: left;
+    flex: 1;
+}
+
+.banner .content p {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.banner .content .right {
+    text-align: right;
+}
+
+.footer {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.item-holder {
+    padding: 42px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .item p,
+.footer .item a {
+
+    font-size: 14px;
+    font-weight: 300;
+    color: #7a7d8e;
+}
+
+.footer .item a.email {
+    color: #ff5c6a;
+}
+
+.footer .item.links a:hover {
+    opacity: 0.4;
+}
+
+.footer .item.links a:not(:last-child) {
+    margin-right: 32px;
+}
+
+.privacy {
+    background: #252633;
+    color: #a9adc1;
+}
+
+.privacy.container {
+    margin-bottom: 80px
+}
+
+.sticky-holder {
+    height: 106px;
+}
+
+.privacy .toc {
+    max-width: 240px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    float: left;
+    top: 120px;
+    z-index: 1
+}
+
+.privacy .toc a {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-align: left;
+    color: #7a7d8e;
+    cursor: pointer
+}
+
+.privacy .toc a:hover {
+    text-decoration: none
+}
+
+.privacy .contents h1,
+.privacy .contents h3 {
+    color: #f5f5f8;
+}
+
+.privacy .contents {
+    max-width: 732px;
+    margin-left: 300px
+}
+
+.privacy p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    color: #7a7d8e;
+    margin-bottom: 20px
+}
+
+.privacy p a {
+    color: #ff5c6a
+}
+
+.privacy h3 {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #f5f5f8;
+    margin-bottom: 16px
+}
+
+.homepage-navbar .hp-topbar {
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #252633;
+}
+
+.homepage-navbar .hp-topbar .flex-nav {
+    display: flex;
+    padding: 35px 0;
+    align-items: center
+}
+
+.homepage-navbar .hp-topbar .flex-nav .nav-logo {
+    flex: 0
+}
+
+.homepage-navbar .hp-topbar .nav-logo img {
+    width: 200px;
+}
+
+.homepage-navbar .hp-topbar .flex-nav .nav-links {
+    flex: 1;
+    text-align: right
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1206px;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .privacy.container {
+        margin: 40px auto;
+    }
+
+    .privacy .toc {
+        display: none
+    }
+    .privacy .contents {
+        max-width: none;
+        margin-left: 0;
+        margin: 0 1px
+    }
+    .privacy .contents h1 {
+        font-size: 26px
+    }
+
+    .sticky-holder {
+        height: 105px;
+    }
+    .hp-topbar-top {
+        padding: 34px 0;
+    }
+    .item-holder {
+        display: block;
+        text-align: center;
+    }
+    .footer .item p,
+    .footer .item a {
+        display: block;
+        margin-bottom: 32px;
+        margin-right: 0 !important;
+    }
+    .footer .item a:last-child {
+        margin-bottom: 0px;
+    }
+    .banner .holder {
+        margin: 0 24px;
+        text-align: center;
+    }
+    .banner .content .left {
+        text-align: center;
+    }
+    .banner .content {
+        margin-top: 32px;
+    }
+    .banner img.logo {
+        width: 240px;
+        margin: auto;
+        margin-bottom: 52px;
+    }
+    .banner .btn {
+        width: 272px;
+    }
+    .wrapper {
+        background-size: contain;
+    }
+}
