@@ -55,14 +55,6 @@
     src="https://www.facebook.com/tr?id=165251190760903&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
-
-    <script type="text/javascript">
-    let trackCareerClick = () => {
-        fbq('trackCustom', 'Draper - Careers Clicked');
-        gtag('event', 'Careers', {'Clicked': 'Draper'});
-        return true;
-    }
-    </script>
 </head>
 
 <body>
@@ -102,6 +94,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+    let trackCareerClick = () => {
+        fbq('trackCustom', 'Draper - Careers Clicked');
+        gtag('event', 'Click', {
+          'event_category': 'Careers',
+          'event_label': 'Work With Us'
+        });
+        return true;
+    }
+    </script>
 </body>
 
 </html>
